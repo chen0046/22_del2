@@ -1,5 +1,11 @@
 import java.util.Scanner;
-
+/*
+Tur-klassen har vi skabt for at gøre det nemt at ændre struktur, rækkefølge eller lignende i spillet.
+Vores tur indeholder derudover også spillets struktur samt definition af point.
+Vi har designet tur således at den kan blive påført en hvilken som helst spiller.
+Dette betyder at du principielt kan spille med et ubegrænset antal spillere. Ikke blot 2.
+Dette gøres muligt
+ */
 public class Tur {
     Scanner input = new Scanner(System.in);
     Terning terning = new Terning();
@@ -46,4 +52,6 @@ public class Tur {
             System.out.println(currentPlayer.getNavn() + " har nu: " + currentPlayer.getPoint() + " point");
         }
     }
+
 }
+
