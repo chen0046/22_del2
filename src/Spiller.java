@@ -15,17 +15,15 @@ public class Spiller {
        /* public int getPoint() {
             return point;
         } //Når man skriver getPoint så viser den ens point
-
         public void setPoint(int point) {
             this.point = point;
         } //Når man skriver setPoint så opdaterer den værdien af ens point */
 
 
-        Scanner input = new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
 
 
-        public void askName (Spiller currentPlayer){
-            currentPlayer.setNavn(input.nextLine());
-        }
+    public void askName (Spiller currentPlayer){
+        currentPlayer.setNavn(input.nextLine());
     }
-
+}
