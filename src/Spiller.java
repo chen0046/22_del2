@@ -3,7 +3,11 @@ import java.util.Scanner;
 public class Spiller {
 
     String navn; //Navn skal defineres som String da det involverer tekst
+    Scanner input = new Scanner(System.in);
 
+    public void askName (Spiller currentPlayer){
+        currentPlayer.setNavn(input.nextLine());
+    }
     public String getNavn() {
         return navn;
     } //Her gør vi så når man skriver getNavn så får man det definerede Navn
@@ -20,10 +24,5 @@ public class Spiller {
         } //Når man skriver setPoint så opdaterer den værdien af ens point */
 
 
-    Scanner input = new Scanner(System.in);
 
-
-    public void askName (Spiller currentPlayer){
-        currentPlayer.setNavn(input.nextLine());
-    }
 }

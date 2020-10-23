@@ -6,7 +6,7 @@ Vi har designet tur således at den kan blive påført en hvilken som helst spil
 Dette betyder at du principielt kan spille med et ubegrænset antal spillere. Ikke blot 2.
 Dette gøres muligt
  */
-public class Tur {
+/*public class Tur {
     Scanner input = new Scanner(System.in);
     Terning terning = new Terning();
     public void tur (Spiller currentPlayer){
@@ -54,4 +54,4 @@ public class Tur {
     }
 
 }
-
+*/
