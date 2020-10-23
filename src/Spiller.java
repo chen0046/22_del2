@@ -23,6 +23,4 @@ public class Spiller {
             this.point = point;
         } //Når man skriver setPoint så opdaterer den værdien af ens point */
 
-
-
 }

@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 /*
 Tur-klassen har vi skabt for at gøre det nemt at ændre struktur, rækkefølge eller lignende i spillet.
 Vores tur indeholder derudover også spillets struktur samt definition af point.
@@ -53,5 +53,57 @@ Dette gøres muligt
         }
     }
 
+}*/
+import java.util.Scanner;
+
+public class Tur {
+    Scanner input = new Scanner(System.in);
+    Terning terning = new Terning();
+
+    public void tur(Spiller currentPlayer) {
+        System.out.println(currentPlayer.getNavn() + ", det er din tur.");
+        System.out.println("Tryk enter for at slå.");
+        input.nextLine();
+        terning.roll();
+        switch (terning.henttotal()){
+            case 2:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println("Du er landet ved tårnet hvor den rare kone bor. Hun giver dig 250kr");
+                break;
+            case 3:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println("Du er landet ved krateret og klodset som du er, taber du 100kr ned i det");
+                break;
+            case 4:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println("Du er landet ved paladset. Den rare baron giver dig 100kr");
+                break;
+            case 5:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println("Du er endt i den kolde ørken hvor du bliver nødt til at bruge 20kr på at købe et tæppe til at holde dig varm");
+                break;
+            case 6:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println("Du er kommet til byen med de store murer. Her hjælper du en lokal bager med at bage brød en morgen og han giver dig 180kr for dit arbejde");
+                break;
+            case 7:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println();
+            case 8:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println();
+            case 9:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println();
+            case 10:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println();
+            case 11:
+                System.out.println("Du har slået " + terning.henttotal());
+                System.out.println();
+            case 12:
+                System.out.println("Du har slået " + terning.henttotal());
+
+        }
+    }
 }
-*/
