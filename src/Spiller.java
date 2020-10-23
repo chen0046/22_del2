@@ -1,10 +1,15 @@
 import java.util.Scanner;
+// Benyttelse af kontoklassens maxPoint int til at afgøre om turen skal fortsætte?
+// På en eller anden måde opretter vi en konto i denne klasse.
 
 public class Spiller {
 
     String navn; //Navn skal defineres som String da det involverer tekst
     Scanner input = new Scanner(System.in);
-
+    /*
+    Konto konto = new Konto;
+    Deraf burde vi kunne refere til kontoen ved at skrive spillernavn.konto
+     */
     public void askName (Spiller currentPlayer){
         currentPlayer.setNavn(input.nextLine());
     }

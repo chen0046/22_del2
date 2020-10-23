@@ -56,6 +56,7 @@ Dette gøres muligt
 }*/
 import java.util.Scanner;
 
+
 public class Tur {
     Scanner input = new Scanner(System.in);
     Terning terning = new Terning();
