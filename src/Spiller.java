@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Spiller {
 
         int point; //Point skal defineres som Int da det involverer hele tal
@@ -20,4 +22,12 @@ public class Spiller {
         } //Når man skriver setPoint så opdaterer den værdien af ens point
     }
 
+public class AskName {
+    Scanner input = new Scanner(System.in);
+
+
+    public void askName(Spiller currentPlayer){
+        currentPlayer.setNavn(input.nextLine());
+    }
+}
 
