@@ -6,7 +6,27 @@ int maxPoint = 3000;
         this.balance = 1000;
 
     }
-    public void addPoint(int point){
+    public boolean addPoint(int point){
+
+
+        if (balance + point >=0){
+            this.balance = balance + point;
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean withdrawPoints(int point){
+        this.balance = balance - point;
+
+        if (balance - point <=0){
+            this.balance = balance - point;
+            return true;
+        } else {
+            return false;
+        }
 
     }
 
