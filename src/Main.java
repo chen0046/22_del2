@@ -3,7 +3,8 @@ public class Main {
     static Spiller spiller1 = new Spiller();
     static Spiller spiller2 = new Spiller();
     static Tur tur = new Tur();
-    static Konto konto = new Konto();
+    static Konto konto1 = new Konto();
+    static Konto konto2 = new Konto();
     public static void main(String[] args) {
 
         System.out.println("Skriv navnet på spiller1");
@@ -13,7 +14,8 @@ public class Main {
         spiller2.askName(spiller2);
         System.out.println("Spiller 2 er " + spiller2.getNavn());
 
-        while (konto.balance == konto.maxPoint) {
+
+        while (konto1.balance < 3000 && konto2.balance <3000)  {
             tur.tur(spiller1);
         }
     }
