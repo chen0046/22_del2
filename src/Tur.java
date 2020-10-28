@@ -89,26 +89,27 @@ public class Tur {
                 break;
             case 7:
                 System.out.println("Du har slået " + terning.henttotal());
-                System.out.println();
+                System.out.println("Du ankommer til klosteret, og beslutter dig for at beundrer den spiatuelle atmosfærer. Dette giver dig 0kr");
                 break;
             case 8:
                 System.out.println("Du har slået " + terning.henttotal());
-                System.out.println();
+                System.out.println("Du tager et sti-system der fører der hend til en mørk indgang. du er endt i den sorte grotte dette koster 70kr at komme ud");
                 break;
             case 9:
                 System.out.println("Du har slået " + terning.henttotal());
-                System.out.println();
+                System.out.println("Du er endt i bjergne og finder nogle efterladte hytter. Du gennemsøger hytterne og finder 60kr");
                 break;
             case 10:
                 System.out.println("Du har slået " + terning.henttotal());
-                System.out.println();
+                System.out.println("Du står foran den gyselige stensætning der ligner en varulv, du bliver så bange at du køber et lift væk hurtigst mugligt, dette koster 80kr og du spiller din tur igen");
                 break;
             case 11:
                 System.out.println("Du har slået " + terning.henttotal());
-                System.out.println();
+                System.out.println("Du er endt ved det djævlens hul og skal lave et ofer til hulet for at komme væk med. du mister 50kr");
                 break;
             case 12:
                 System.out.println("Du har slået " + terning.henttotal());
+                System.out.println("Du er drejet til venstre ved stigen alle drejer til højre ved, du er endt ved guldminen, du modtager 650kr");
                 break;
         }
     }
