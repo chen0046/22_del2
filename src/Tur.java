@@ -90,21 +90,26 @@ public class Tur {
             case 7:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println();
+                break;
             case 8:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println();
+                break;
             case 9:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println();
+                break;
             case 10:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println();
+                break;
             case 11:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println();
+                break;
             case 12:
                 System.out.println("Du har slået " + terning.henttotal());
-
+                break;
         }
     }
 }
