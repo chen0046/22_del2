@@ -5,8 +5,9 @@ public class Main {
     static Tur tur = new Tur();
     static Konto konto1 = new Konto();
     static Konto konto2 = new Konto();
-
+    static Printregler regler = new Printregler();
     public static void main(String[] args) {
+        regler.Spilleregler();
 
         System.out.println("Skriv navnet på spiller1");
         spiller1.askName(spiller1);
