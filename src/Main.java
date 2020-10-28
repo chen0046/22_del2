@@ -3,8 +3,11 @@ public class Main {
     static Spiller spiller1 = new Spiller();
     static Spiller spiller2 = new Spiller();
     static Tur tur = new Tur();
-
+    static Konto konto1 = new Konto();
+    static Konto konto2 = new Konto();
+    static Printregler regler = new Printregler();
     public static void main(String[] args) {
+        regler.Spilleregler();
 
         System.out.println("Skriv navnet på spiller1");
         spiller1.askName(spiller1);
@@ -14,6 +17,9 @@ public class Main {
         System.out.println("Spiller 2 er " + spiller2.getNavn());
 
         tur.tur(spiller1);
-
+        if (konto1.getBalance()>=3000) {
+            System.out.println("Tillykke " + spiller1.getNavn() + " du har vundet spillet ");
+        }
+        tur.tur(spiller2);
     }
 }
