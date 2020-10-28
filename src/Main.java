@@ -15,8 +15,16 @@ public class Main {
         System.out.println("Spiller 2 er " + spiller2.getNavn());
 
 
-        while (konto1.balance < 3000 && konto2.balance <3000)  {
+        while (konto1.balance <= 3000 && konto2.balance <= 3000)  {
             tur.tur(spiller1);
+            if (konto1.getBalance()>=3000) {
+                System.out.println("Tillykke " + spiller1.getNavn() + " du har vundet spillet ");
+                break;
+            }
+            tur.tur(spiller2);
+        }
+        if (konto2.balance >= 3000){
+            System.out.println("Tillykke " + spiller2.getNavn() + " du har vundet spillet ");
         }
     }
 }

@@ -2,7 +2,7 @@ public class Konto {
     int balance;
 int maxPoint = 3000;
 
-    public Konto() {
+    public void Startpenge() {
         this.balance = 1000;
 
     }
