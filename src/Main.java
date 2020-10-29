@@ -14,10 +14,18 @@ public class Main {
         spiller2.askName(spiller2);
         System.out.println("Spiller 2 er " + spiller2.getNavn() + ".");
 
-        tur.tur(spiller1);
-        if (spiller1.spillerKonto.getBalance()>=3000) {
-            System.out.println("Tillykke " + spiller1.getNavn() + " du har vundet spillet ");
+        while (spiller1.spillerKonto.getBalance() < spiller1.spillerKonto.maxPoint && spiller2.spillerKonto.getBalance() < spiller2.spillerKonto.maxPoint) {
+            tur.tur(spiller1);
+            if (spiller1.spillerKonto.getBalance() >= spiller1.spillerKonto.maxPoint) {
+                break;
+            }
+            tur.tur(spiller2);
         }
-        tur.tur(spiller2);
+        if (spiller1.spillerKonto.getBalance() >= spiller1.spillerKonto.maxPoint) {
+            System.out.println("Tillykke " + spiller1.getNavn() + " du har vundet!");
+        }
+        else {
+            System.out.println("Tillykke " + spiller2.getNavn() + " du har vundet!");
+        }
     }
 }
