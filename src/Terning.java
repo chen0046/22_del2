@@ -9,8 +9,8 @@ public class Terning {
     public void roll(){  /*Vi får roll funktionen til at sørge for at hver terning giver os et tilfældigt
         tal mellem 1-6 for hver gang vi roller. Det er også nemt at ændre værdien af terningen
         og det er også nemt at sørge for at hver terning har et vidst antal øjne*/
-        terning1 = (int)(Math.random()*1+1);
-        terning2 = (int)(Math.random()*1+1);
+        terning1 = (int)(Math.random()*6+1);
+        terning2 = (int)(Math.random()*6+1);
     }
     public int hentterning1() { //Giv et tal (resultat) for terning 1
         return terning1;
