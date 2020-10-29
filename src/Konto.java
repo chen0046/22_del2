@@ -2,6 +2,8 @@ public class Konto {
     int balance;
 int maxPoint = 3000;
 
+
+
     public void Startpenge() {
         this.balance = 1000;
 
@@ -34,5 +36,8 @@ int maxPoint = 3000;
         return balance;
     }
 
+    public void setBalance(int balance) {
+        this.balance = balance;
+    }
     }
 
