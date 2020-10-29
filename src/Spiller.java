@@ -23,6 +23,8 @@ public class Spiller {
         this.navn = navn;
     } //Her gør vi så når man skriver setNavn så definerer vi navnet
 
+
+
        /* public int getPoint() {
             return point;
         } //Når man skriver getPoint så viser den ens point

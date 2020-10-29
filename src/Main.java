@@ -3,8 +3,6 @@ public class Main {
     static Spiller spiller1 = new Spiller();
     static Spiller spiller2 = new Spiller();
     static Tur tur = new Tur();
-   // static Konto konto1 = new Konto();
-   // static Konto konto2 = new Konto();
     static Printregler regler = new Printregler();
     public static void main(String[] args) {
         regler.Spilleregler();

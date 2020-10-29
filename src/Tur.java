@@ -120,6 +120,7 @@ public class Tur {
                 System.out.println("Du står foran den gyselige stensætning der ligner en varulv, du bliver så bange at du køber et lift væk hurtigst mugligt, dette koster 80kr og du spiller din tur igen");
                 currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() - 80);
                 System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
+                tur(currentPlayer);
                 break;
             case 11:
                 System.out.println("Du har slået " + terning.henttotal());

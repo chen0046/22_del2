@@ -31,6 +31,9 @@ public class Konto {
 
     public void setBalance(int balance) {
         this.balance = balance;
+        if (balance < 0) {
+            setBalance(0);
+        }
     }
 }
 
