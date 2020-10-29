@@ -9,9 +9,9 @@ public class Spiller {
     Konto spillerKonto = new Konto();
 
     /*
-    Startpenge konto = new Startpenge;
-    Deraf burde vi kunne refere til kontoen ved at skrive spillernavn.konto
-     */
+        Startpenge konto = new Startpenge;
+        Deraf burde vi kunne refere til kontoen ved at skrive spillernavn.konto
+         */
     public void askName (Spiller currentPlayer){
         currentPlayer.setNavn(input.nextLine());
     }

@@ -1,29 +1,22 @@
 public class Konto {
-    int balance;
-int maxPoint = 3000;
+    int balance = 1000;
+    int maxPoint = 3000;
+
+    public boolean addPoint(int point) {
 
 
-
-    /*public void Startpenge() {
-        this.balance = 1000;
-
-    }*/
-    public boolean addPoint(int point){
-
-
-        if (balance + point >=0){
+        if (balance + point >= 0) {
             this.balance = balance + point;
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 
-    public boolean withdrawPoints(int point){
+    public boolean withdrawPoints(int point) {
         this.balance = balance - point;
 
-        if (balance - point <=0){
+        if (balance - point <= 0) {
             this.balance = balance - point;
             return true;
         } else {
@@ -39,5 +32,5 @@ int maxPoint = 3000;
     public void setBalance(int balance) {
         this.balance = balance;
     }
-    }
+}
 

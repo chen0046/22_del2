@@ -71,67 +71,67 @@ public class Tur {
             case 2:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du er landet ved tårnet hvor den rare kone bor. Hun giver dig 250kr");
-                konto.addPoint(250);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() + 250);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 3:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du er landet ved krateret og klodset som du er, taber du 100kr ned i det");
-                konto.withdrawPoints(100);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() - 100);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 4:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du er landet ved paladset. Den rare baron giver dig 100kr");
-                konto.addPoint(100);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() + 100);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 5:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du er endt i den kolde ørken hvor du bliver nødt til at bruge 20kr på at købe et tæppe til at holde dig varm");
-                konto.withdrawPoints(20);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() - 20);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 6:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du er kommet til byen med de store murer. Her hjælper du en lokal bager med at bage brød en morgen og han giver dig 180kr for dit arbejde");
-                konto.addPoint(180);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() + 180);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 7:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du ankommer til klosteret, og beslutter dig for at beundrer den spiatuelle atmosfærer. Dette giver dig 0kr");
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 8:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du tager et sti-system der fører der hend til en mørk indgang. du er endt i den sorte grotte dette koster 70kr at komme ud");
-                konto.withdrawPoints(70);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() - 70);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 9:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du er endt i bjergne og finder nogle efterladte hytter. Du gennemsøger hytterne og finder 60kr");
-                konto.addPoint(60);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() + 60);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 10:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du står foran den gyselige stensætning der ligner en varulv, du bliver så bange at du køber et lift væk hurtigst mugligt, dette koster 80kr og du spiller din tur igen");
-                konto.withdrawPoints(80);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() - 80);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 11:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du er endt ved det djævlens hul og skal lave et ofer til hulet for at komme væk med. du mister 50kr");
-                konto.withdrawPoints(50);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() - 50);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
             case 12:
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du er drejet til venstre ved stigen alle drejer til højre ved, du er endt ved guldminen, du modtager 650kr");
-                konto.addPoint(650);
-                System.out.println("Nu har du " + konto.balance + "kr i din konto" );
+                currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() + 650);
+                System.out.println("Nu har du " + currentPlayer.spillerKonto.getBalance() + "kr i din konto" );
                 break;
         }
     }
