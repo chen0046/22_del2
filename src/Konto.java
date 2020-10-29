@@ -4,10 +4,10 @@ int maxPoint = 3000;
 
 
 
-    public void Startpenge() {
+    /*public void Startpenge() {
         this.balance = 1000;
 
-    }
+    }*/
     public boolean addPoint(int point){
 
 

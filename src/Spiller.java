@@ -6,6 +6,8 @@ public class Spiller {
 
     String navn; //Navn skal defineres som String da det involverer tekst
     Scanner input = new Scanner(System.in);
+    Konto spillerKonto = new Konto();
+
     /*
     Startpenge konto = new Startpenge;
     Deraf burde vi kunne refere til kontoen ved at skrive spillernavn.konto
