@@ -1,6 +1,5 @@
 public class Printregler {
-    public void Spilleregler() {
-        //Printer reglerne og indholdet ud (viser dem i spillet)
+    public static void Spilleregler() {
         System.out.println("Spilleregler");
         System.out.println();
         System.out.println("Spillet indeholder:");
