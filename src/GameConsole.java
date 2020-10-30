@@ -1,9 +1,10 @@
-public class GameConsol {
+public class GameConsole {
 
     Spiller spiller1 = new Spiller();
     Spiller spiller2 = new Spiller();
     Tur tur = new Tur();
     public void Startgame(){
+        Printregler.Spilleregler();
         System.out.println("Skriv navnet på spiller1");
         spiller1.askName(spiller1);
         System.out.println("Spiller 1 er " + spiller1.getNavn() + ".");
