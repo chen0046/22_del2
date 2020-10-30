@@ -1,9 +1,7 @@
 public class Main {
 
-     static GameConsol gameconsol = new GameConsol();
-
-
     public static void main(String[] args) {
+        GameConsol gameconsol = new GameConsol();
         Printregler.Spilleregler();
         gameconsol.Startgame();
     }
