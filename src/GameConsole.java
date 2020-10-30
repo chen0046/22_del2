@@ -29,7 +29,4 @@ public class GameConsole {
             System.out.println("Tillykke " + spiller2.getNavn() + " du har vundet!");
         }
     }
-
 }
-
-

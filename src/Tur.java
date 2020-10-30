@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 public class Tur {
-    Scanner input = new Scanner(System.in);
-    Terning terning = new Terning();
+    Scanner input = new Scanner(System.in); //vi sørger for der er en scanner så vi kan tage imod inputs
+    Terning terning = new Terning(); //vi indsætter terningerne fra Terning klassen
 
     public void tur(Spiller currentPlayer) {
         System.out.println(currentPlayer.getNavn() + ", det er din tur.");
         System.out.println("Tryk enter for at slå.");
-        input.nextLine();
-        terning.roll();
+        input.nextLine(); //Her får vi spilleren til at trykke på enter for at gå til næste punkt
+        terning.roll(); //Her slår man med terningerne
         /*Herunder har vi vores switch som tager summen af vores terninger og fortæller spilleren hvor man er landet
         og hvad der sker ved de forskellige felter*/
         switch (terning.henttotal()){

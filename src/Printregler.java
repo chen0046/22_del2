@@ -1,4 +1,6 @@
 public class Printregler {
+    /* Her Bruger vi skriver vi alle spillereglerne ned og definerer dem som Spilleregler
+    så vi nemt kan bruge dem i andre classes */
     public static void Spilleregler() {
         System.out.println("Spilleregler");
         System.out.println();
