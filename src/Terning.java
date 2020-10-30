@@ -22,6 +22,16 @@ public class Terning {
     public int henttotal() { //Giv et resultat for de 2 terninger lagt sammen
         return terning1 + terning2;
     } //Vis summen af hvad terning 1 og 2 fik
+
+    public void rollMultiple(int n) {
+        for (int i=1; i<n; i++) {
+            roll();
+            System.out.print(henttotal());
+        }
+    }
+
+
 }
+
 
 
