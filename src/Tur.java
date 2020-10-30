@@ -9,8 +9,12 @@ public class Tur {
         System.out.println("Tryk enter for at slå.");
         input.nextLine();
         terning.roll();
+        /*Herunder har vi vores switch som tager summen af vores terninger og fortæller spilleren hvor man er landet
+        og hvad der sker ved de forskellige felter*/
         switch (terning.henttotal()){
             case 2:
+                /*fx ved terningsummen 2 fortæller den hvad du har slået, hvad der sker ved det felt, hvor mange penge
+                man har fået eller mistet og hvor mange penge man nu har i alt*/
                 System.out.println("Du har slået " + terning.henttotal());
                 System.out.println("Du er landet ved tårnet hvor den rare kone bor. Hun giver dig 250kr");
                 currentPlayer.spillerKonto.setBalance(currentPlayer.spillerKonto.getBalance() + 250);
